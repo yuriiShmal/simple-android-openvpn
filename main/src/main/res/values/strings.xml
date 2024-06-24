@@ -1,9 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?> <!--
-  ~ Copyright (c) 2012-2016 Arne Schwabe
-  ~ Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
-  -->
 <resources>
-    <string name="app">OpenVPN for Android</string>
+    <string name="app_name">Android Simple OpenVPN</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="connect_txt">Connect</string>
+    <string name="connecting">Connecting…</string>
+    <string name="reconnect_txt">Reconnect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="select_server">Select Server</string>
+    <string name="time_left">60:00</string>
+    <string name="connection_time">0:00</string>
+    <string name="connectedCountry">US</string>
+    <string name="download_tot">0.0 B</string>
+    <string name="upload_tot">0.0 B</string>
+    <string name="download_speed">0.0 B/s</string>
+    <string name="upload_speed">0.0 B/s</string>
+    <string name="back">Return to Connections</string>
+    <string-array name="servers">
+        <item>Best Connection</item>
+        <item>US</item>
+    </string-array>
     <string name="address">Server Address:</string>
     <string name="port">Server Port:</string>
     <string name="location">Location</string>
@@ -511,4 +526,5 @@
     <string name="permission_requested">Permission to start a VPN connection is required</string>
     <string name="missing_vpn_permission_log">VPN Service is missing permission to connect a VPN. Requesting permission via notification.</string>
     <string name="ignore_vpn_start_request">VPN already running (%s). Ignoring request to start VPN.</string>
+
 </resources>

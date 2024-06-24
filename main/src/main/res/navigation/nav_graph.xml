@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainActivity">
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="de.blinkt.openvpn.activities.MainActivity"
+        android:label="MainActivity" />
+    <activity
+        android:id="@+id/connectedActivity"
+        android:name="de.blinkt.openvpn.activities.ConnectedActivity"
+        android:label="ConnectedActivity" />
+    <activity
+        android:id="@+id/connectingActivity"
+        android:name="de.blinkt.openvpn.activities.ConnectingActivity"
+        android:label="ConnectingActivity" />
+    <activity
+        android:id="@+id/disconnectedSummaryActivity"
+        android:name="de.blinkt.openvpn.activities.DisconnectedSummaryActivity"
+        android:label="DisconnectedSummaryActivity" />
+</navigation>

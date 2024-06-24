@@ -93,11 +93,11 @@ public class ConfirmDialog extends Activity implements
             View view = View.inflate(this, R.layout.api_confirm, null);
             CharSequence appString;
             if (mPackage.equals(ANONYMOUS_PACKAGE)) {
-                appString = getString(R.string.all_app_prompt, getString(R.string.app));
+                appString = getString(R.string.all_app_prompt, getString(R.string.app_name));
             } else {
                 PackageManager pm = getPackageManager();
                 ApplicationInfo app = pm.getApplicationInfo(mPackage, 0);
-                appString = getString(R.string.prompt, app.loadLabel(pm), getString(R.string.app));
+                appString = getString(R.string.prompt, app.loadLabel(pm), getString(R.string.app_name));
                 ((ImageView) view.findViewById(R.id.icon)).setImageDrawable(app.loadIcon(pm));
             }
 
